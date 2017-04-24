@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="shortcut icon" type="image/png" href="img/jogge.png">
+</head>
+<body>
+	<img class="jordkim_gif" src="img/1610412.gif" alt="fuck jordkim">
+	<div class="audio_trash">
+		<audio controls>
+			<source src="audio/AHA.wav" type="audio/wav">
+			Your browser does not support the audio element nigga.
+		</audio>
+		<audio controls>
+			<source src="audio/aRNE_SKRIG.wav" type="audio/wav">
+			Your browser does not support the audio element nigga.
+		</audio>
+		<audio controls>
+			<source src="audio/feed.mp3" type="audio/mpeg">
+			Your browser does not support the audio element nigga.
+		</audio>
+		<audio controls>
+			<source src="audio/hyggen.wav" type="audio/wav">
+			Your browser does not support the audio element nigga.
+		</audio>
+		<audio controls>
+			<source src="audio/uglygod.mp3" type="audio/mpeg">
+			Your browser does not support the audio element nigga.
+		</audio>
+	</div>
+	<h3>mit NAVN er JOACHIMM</h3>
+	<img class="adam_face" src="img/adam.png">
+	<p class="adam_face_text">fisse haha</p>
+	
+	<button class="mute_btn" onclick="toggleMute()" type="button">HOLD KÆFT SAMRITA PLEASE</button>
+	<div class="background_vid">
+		<video id="bg_vid" loop autoplay>
+			<source src="video/robin2.mp4" type="video/mp4">
+		</video>
+	</div>
+</body>
+<script>
+	var vid = document.getElementById("bg_vid");
+	vid.volume = 0.3;
+	
+	function toggleMute() {
+		if (vid.volume > 0){
+			vid.volume = 0;
+		}else{
+			vid.volume = 0.3;
+		}
+	}
+</script>
+</html>

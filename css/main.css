@@ -1,0 +1,101 @@
+@keyframes joachim {
+    0%   {transform: translate(60%, 2000%);}
+    25%  {transform: skewY(20deg);}
+    50%  {transform: translateY(20%);}
+    75%  {transform: rotate(1101deg);}
+    80%  {transform: rotate(2101deg);}
+    95% {transform: translate(100%, 50%);}
+    100% {transform: translate(100%, 500%);}
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html{
+	cursor: url('../img/jogge2.png'), default;
+}
+body{
+	background-image: url('../img/pik_drengen.png');
+	background-size: 50px;
+	overflow: hidden;
+}
+
+.jordkim_gif{
+	position: absolute;
+    margin: auto;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+	transition: all 2s ease-in-out;
+}
+.jordkim_gif:hover{
+	transform: scale(20) skew(20deg, 500deg);
+}
+
+.audio_trash{
+	text-align: center;
+}
+
+.background_vid{
+	position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+}
+.background_vid video{
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
+
+h3{
+	font-size: 50px;
+    text-transform: uppercase;
+    font-family: fantasy;
+    color: #fff;
+	display: inline-block;
+	margin-left: 130px;
+    -webkit-text-stroke: 2px black;
+	animation: joachim 5s cubic-bezier(0.6, -0.28, 0.74, 0.05) infinite;
+}
+
+.adam_face{
+	position: absolute;
+	bottom: -20px;
+    right: -20px;
+	transition: all 0.5s ease;
+}
+.adam_face_text{
+	opacity: 0;
+    position: absolute;
+    font-size: 30px;
+    font-family: cursive;
+    color: red;
+    right: 5px;
+    bottom: 80px;
+    transition: all 1s ease;
+}
+.adam_face:hover{
+	bottom: -10px;
+}
+.adam_face:hover~.adam_face_text{
+	opacity: 1;
+}
+
+.mute_btn{
+	cursor: url(../img/emoji.png), auto;
+    transform: scale(2.3) skewY(3deg);
+    background-color: #9c6fc5;
+    color: #42d49f;
+    position: absolute;
+    bottom: 40px;
+    box-shadow: 2px 3px 5px 0px #ff3333;
+}
