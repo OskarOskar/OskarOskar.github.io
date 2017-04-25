@@ -37,6 +37,12 @@
 	<img id="dead" src="img/ded.png">
 	<img id="elite_knight" onclick="youDiedNigga()" src="img/elite_knight.png">
 	
+	<img id="cirkel_drengen" src="img/cirkel_drengen.png">
+	<img id="bidsa" src="img/bidsa.png">
+	
+	<button id="toggle_adam" onclick="toggleAdam()" type="button">den sjov knap</button>
+	<img id="adam_gif" src="img/adam_gif.gif">
+	
 	<button class="mute_btn" onclick="toggleMute()" type="button">hOLD KÆFT SAMRITA PLEASE</button>
 	<div class="background_vid">
 		<video id="bg_vid" loop autoplay>
@@ -61,6 +67,16 @@
 		setTimeout(function() {
             dead.style.display = "none";
         },1000)
+	}
+	
+	var adamGif = document.getElementById("adam_gif");
+	adamGif.style.opacity = "0";
+	function toggleAdam(){
+		if (adamGif.style.opacity == "0"){
+			adamGif.style.opacity = "1";
+		}else{
+			adamGif.style.opacity = "0";
+		}
 	}
 </script>
 </html>
