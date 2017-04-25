@@ -154,6 +154,7 @@ h3{
     right: 20%;
     top: 200px;
     padding: 11px;
+	cursor: url(../img/pizza.png), auto;
 }
 #toggle_adam:focus{
 	animation: rotate 10s infinite linear;
@@ -167,4 +168,44 @@ h3{
     z-index: -1;
 	box-shadow: 0px 0px 20px 100px rgba(255, 247, 0, 0.18);
 	transition: all 2s ease;
+}
+
+#gg_ostemad:active{
+    z-index: 5;
+    transform: skew(30deg, -40deg) translate(-90%, 390%) scale(4);
+    outline: none;
+    background-color: rgba(173, 95, 95, 0.84);
+    box-shadow: 8px 19px 3px 0px rgba(55, 169, 90, 0.32);
+	transition: all 1s linear;
+}
+
+#twerk_gif{
+	position: absolute;
+	bottom: 30px;
+	animation: joachim 10s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite;
+}
+
+#unsub{
+    background-image: url(../img/unsub.png);
+    background-position-y: 62px;
+    width: 224px;
+    height: 62px;
+    background-color: rgba(255, 0, 0, 0);
+    border: none;
+    outline: none;
+    position: absolute;
+    left: 20%;
+    top: 40%;
+	cursor: url(../img/whip.png), auto;
+}
+#unsub:focus{
+    background-position-y: 0px;
+}
+
+#jogge_gif{
+	width: 150px;
+	position: absolute;
+	right: 0;
+	top: 40%;
+	animation: zoom 10s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite, rotate 60s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite;
 }

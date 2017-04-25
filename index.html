@@ -43,6 +43,17 @@
 	<button id="toggle_adam" onclick="toggleAdam()" type="button">den sjov knap</button>
 	<img id="adam_gif" src="img/adam_gif.gif">
 	
+	<img id="gg_ostemad" width="100px" src="img/ggostemad.gif">
+	
+	<input type="button" id="unsub" onclick="jogge()">
+	<audio id="jogge_sang" src="audio/jogge.mp3" ></audio>
+	
+	<img src="img/creeper.gif">
+	
+	<img id="jogge_gif" src="img/jogge.gif">
+	
+	<img id="twerk_gif" src="img/twerk.gif">
+	
 	<button class="mute_btn" onclick="toggleMute()" type="button">hOLD KÆFT SAMRITA PLEASE</button>
 	<div class="background_vid">
 		<video id="bg_vid" loop autoplay>
@@ -78,5 +89,11 @@
 			adamGif.style.opacity = "0";
 		}
 	}
+	
+	function jogge(){
+		var audio = document.getElementById("jogge_sang");
+		audio.volume = 0.5;
+		audio.play();
+    }
 </script>
 </html>
