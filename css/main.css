@@ -7,6 +7,10 @@
     95% {transform: translate(100%, 50%);}
     100% {transform: translate(100%, 500%);}
 }
+@keyframes zoom {
+    0%   {transform: scale(1);}
+    100% {transform: scale(1.5);}
+}
 
 *{
 	margin: 0;
@@ -91,11 +95,30 @@ h3{
 }
 
 .mute_btn{
-	cursor: url(../img/emoji.png), auto;
+	cursor: url(../img/emoji.png), default;
     transform: scale(2.3) skewY(3deg);
     background-color: #9c6fc5;
     color: #42d49f;
     position: absolute;
     bottom: 40px;
     box-shadow: 2px 3px 5px 0px #ff3333;
+}
+
+#elite_knight{
+    cursor: url(../img/sword.png), auto;
+    position: absolute;
+    left: 20px;
+    bottom: -90px;
+    width: 150px;
+}
+#dead{
+	position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+	filter: drop-shadow(0 0 15px black);
+	display: none;
+	animation: zoom 2s forwards;
 }

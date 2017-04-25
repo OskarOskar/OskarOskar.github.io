@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="shortcut icon" type="image/png" href="img/jogge.png">
-	<meta charset="UTF-8">
 	<title>joachim er dum</title>
 </head>
 <body>
@@ -34,7 +34,10 @@
 	<img class="adam_face" src="img/adam.png">
 	<p class="adam_face_text">fisse haha</p>
 	
-	<button class="mute_btn" onclick="toggleMute()" type="button">HOLD KÆFT SAMRITA PLEASE</button>
+	<img id="dead" src="img/ded.png">
+	<img id="elite_knight" onclick="youDiedNigga()" src="img/elite_knight.png">
+	
+	<button class="mute_btn" onclick="toggleMute()" type="button">hOLD KÃ†FT SAMRITA PLEASE</button>
 	<div class="background_vid">
 		<video id="bg_vid" loop autoplay>
 			<source src="video/robin2.mp4" type="video/mp4">
@@ -44,13 +47,20 @@
 <script>
 	var vid = document.getElementById("bg_vid");
 	vid.volume = 0.3;
-	
-	function toggleMute() {
+	function toggleMute(){
 		if (vid.volume > 0){
 			vid.volume = 0;
 		}else{
 			vid.volume = 0.3;
 		}
+	}
+	
+	var dead = document.getElementById("dead");
+	function youDiedNigga(){
+		dead.style.display = "block";
+		setTimeout(function() {
+            dead.style.display = "none";
+        },1000)
 	}
 </script>
 </html>
